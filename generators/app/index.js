@@ -10,7 +10,13 @@ module.exports = generators.Base.extend({
 		this.argument("headerName", { type: String, required: true });
 
 		// Where are we going to put the generated files
-		this.option("unicode", { alias: "U" });
+		this.option("unicode",
+				{
+					alias: "u",
+					type: "boolean",
+					desc: "Put the generated files in Unicode unit tester",
+					defaults: false
+				});
 	},
 	
 	generateHeader: function () {

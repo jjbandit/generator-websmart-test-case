@@ -1,9 +1,10 @@
 {
   "name": "generator-websmart-test-case",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate Websmart test case boilerplate.",
   "main": "index.js",
   "files": ["generators/app"],
+  "repository": "http://github.com/jjbandit/generator-websmart-test-case.git",
   "keywords": [
     "yeoman-generator"
   ],

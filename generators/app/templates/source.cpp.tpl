@@ -26,7 +26,7 @@ bool <%= className %>::Test()
 
 	if ( ! SOMEFUNC() )
 	{
-		pTracer->Trace("_T(Failed on <%= className %>::SOMEFUNC"));
+		pTracer->Trace(_T("Failed on <%= className %>::SOMEFUNC"));
 		bResult = false;
 	}
 

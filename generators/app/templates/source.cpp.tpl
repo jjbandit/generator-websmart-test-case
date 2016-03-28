@@ -22,22 +22,12 @@
 bool <%= className %>::Test()
 {
 
-	bool bResult = true;
+	SOMEFUNC();
 
-	if ( ! SOMEFUNC() )
-	{
-		pTracer->Trace(_T("Failed on <%= className %>::SOMEFUNC"));
-		bResult = false;
-	}
-
-
-	return bResult;
+	return m_bTestsPassed;
 }
 
-bool <%= className %>::SOMEFUNC()
+void <%= className %>::SOMEFUNC()
 {
-	bool bResult = true;
-
-
-	return bResult;
+	ASSERT_TRACE();
 }

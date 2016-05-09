@@ -14,14 +14,30 @@ module.exports = generators.Base.extend({
 				{
 					alias: "u",
 					type: "boolean",
-					desc: "Put the generated files in Unicode unit tester",
+					desc: "Put the generated files in Unicode test cases",
+					defaults: false
+				});
+
+		this.option("ansi",
+				{
+					alias: "a",
+					type: "boolean",
+					desc: "Put the generated files in Ansi test cases",
 					defaults: false
 				});
 	},
 	
 	generateHeader: function () {
 
-		var outputPath = this.options.unicode ? "UnitTesterUnicode\\UnitTester\\" : "UnitTester\\UnitTester\\" ;
+		var outputPath = "UnitTester\\UnitTester\\Tests\\" ;
+
+		if ( this.options.unicode ) {
+			outputPath += "Unicode" ;
+		}
+
+		if ( this.options.ansi ) {
+			outputPath += "ANSI" ;
+		}
 
 		var headerName = this.headerName
 		var headerPath = `Common\\${headerName}.h`;

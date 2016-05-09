@@ -11,6 +11,6 @@ public:
 	<%= className %>(CTracer * pTracerParm);
 
 	bool Test();
-	
+
 	void SOMEFUNC();
 };

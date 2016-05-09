@@ -1,6 +1,6 @@
 {
   "name": "generator-websmart-test-class",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Generate Websmart test class boilerplate.",
   "main": "index.js",
   "files": ["generators/app"],

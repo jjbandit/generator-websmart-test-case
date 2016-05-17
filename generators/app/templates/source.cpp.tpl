@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "..\..\..\Common\stdafx.h"
 
-#include "..\..\Common\Tracer.h"
-#include "..\..\Common\<%= headerName %>.h"
+#include "..\..\..\Common\Tracer.h"
+#include "..\..\..\Common\<%= headerName %>.h"
 
 #include "<%= fileName %>.h"
 

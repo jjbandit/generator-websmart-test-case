@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Tester.h"
+#include "..\Base\Tester.h"
 
 class CTracer;
 
